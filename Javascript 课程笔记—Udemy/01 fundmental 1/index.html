@@ -1,0 +1,4003 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mydomain.org/mysite/Javascript%20%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%E2%80%94Udemy/01%20fundmental%201/">
+      
+      
+        <link rel="prev" href="../00%20%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D/">
+      
+      
+        <link rel="next" href="../02%20fundmental%202/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+    
+    
+      
+        <title>01 fundmental 1 - My site</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.732c4fb1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+      <link rel="stylesheet" href="../../mkdocs/css/unordered-list-symbols.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-XXXXXXXXXX",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="defult" data-md-color-primary="teal" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-javascript" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="My site" class="md-header__button md-logo" aria-label="My site" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My site
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              01 fundmental 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="defult" data-md-color-primary="teal" data-md-color-accent="orange"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="orange"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Yang-Xijie/yang-xijie.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yang-xijie.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../00%20%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D/" class="md-tabs__link">
+          
+  
+    
+  
+  Javascript 课程笔记—Udemy
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/1.%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6%201/" class="md-tabs__link">
+          
+  
+    
+  
+  01力扣-刷题笔记
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My site" class="md-nav__button md-logo" aria-label="My site" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My site
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Yang-Xijie/yang-xijie.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yang-xijie.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Javascript 课程笔记—Udemy
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Javascript 课程笔记—Udemy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00%20%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    00 课程介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    01 fundmental 1
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    01 fundmental 1
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.如何连接 Javascript 文件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.变量的使用，变量命名的规则
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.变量类型
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4let-var-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.let var const 的区别
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.基础的运算符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.基础的运算符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#math-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      // math operators 数学运算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assignment-operaters" class="md-nav__link">
+    <span class="md-ellipsis">
+      // assignment operaters 赋值运算符
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      // comparison operators 比较运算符
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6operators-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.operators precedence 运算优先级
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7challenge-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.challenge 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8strings-and-template-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.strings and template literals 字符串，模板文字
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.strings and template literals 字符串，模板文字">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#template-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      template literals 语法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      实例，传统与模板变量的区别
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9taking-decisions-ifelse" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.taking decisions if—else 判断语句
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10coding-challenge-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.coding challenge 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11type-conversion-and-corecion" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.type conversion and corecion 类型的转换和强制变化
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12truthy-and-falsy-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.truthy and falsy values 虚假值和真值的转换
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equality-operators-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      equality operators == vs === 相等运算
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-logicoperators" class="md-nav__link">
+    <span class="md-ellipsis">
+      boolean logic，operators —— &amp;&amp;，||，！
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="boolean logic，operators —— &&，||，！">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logical-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      logical operators——只用逻辑判断符号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-challenge-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      coding challenge 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-statementswitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      switch statement——switch 语法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statements-and-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      statements and expressions 语句和表达句的区别
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-conditional-ternary-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Conditional (Ternary) Operator 条件运算符 （三元运算符）？？ 需要实践
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-challenge-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coding Challenge #4
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02%20fundmental%202/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    02 fundmental 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03%20%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%8C%E5%85%B3%E6%B3%A8%E9%87%8D%E7%82%B9%E8%AF%BE%E7%A8%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    03 学习路线，关注重点课程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05%20DOM%20and%20event%20fundamental%20%28project%E2%80%94%E2%80%94guess%20my%20num%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    project 1 —— guess my num
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06%20How%20Javascript%20works%20behind%20screen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Javascript 的特性
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08%20A%20closer%20look%20at%20function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    08 A closer look at function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09%20working%20with%20arrays%20%E6%95%B0%E7%BB%84%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    09 working with arrays 数组的使用方法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12%20Object-Oriented%20Programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12 Object Oriented Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13%20Mapty%20app%20--%20project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13 Mapty app    project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14%20Asynchronous%20JavaScript%2C%20AJAX%20and%20APIs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14 Asynchronous JavaScript, AJAX and APIs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15%20Modern%20JavaScript%20Development%20Modules%20and%20tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15 Modern JavaScript Development Modules and tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20%20forkify%20app%20Project%20Overview%20and%20Planning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20 forkify app Project Overview and Planning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../JavaScript%20%E8%AF%AD%E8%A8%80%E7%9A%84%E9%87%8D%E7%82%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JavaScript 语言的重点
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../JavaScript%E9%80%9F%E6%88%90%E8%AF%BE%E3%80%90%E6%B2%B9%E7%AE%A1%E6%9C%80%E7%81%ABJS%E6%95%99%E7%A8%8B%E3%80%91/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JavaScript速成课【油管最火JS教程】
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Udemy%E6%8E%92%E5%90%8D%E7%AC%AC%E4%B8%80%E7%9A%84JavaScript%E8%AF%BE%E7%A8%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Udemy排名第一的JavaScript课程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    01力扣-刷题笔记
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            01力扣-刷题笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/1.%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    知识点
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/1431.%20kidsWithCandies%20%E6%8B%A5%E6%9C%89%E6%9C%80%E5%A4%9A%E7%B3%96%E6%9E%9C%E7%9A%84%E5%AD%A9%E5%AD%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    题目
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/238.%20%E9%99%A4%E8%87%AA%E8%BA%AB%E4%BB%A5%E5%A4%96%E6%95%B0%E7%BB%84%E7%9A%84%E4%B9%98%E7%A7%AF%20productExceptSelf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    链接
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/283%E3%80%81%E7%A7%BB%E5%8A%A8%E9%9B%B6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    283、移动零
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/334.%20%E9%80%92%E5%A2%9E%E7%9A%84%E4%B8%89%E5%85%83%E5%AD%90%E5%BA%8F%E5%88%97/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    leetcode题目-334. 递增的三元子序列
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/345.%20reverseVowels%20%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%85%83%E9%9F%B3%E5%AD%97%E6%AF%8D/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    难度 简单！
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/485.%20%E6%9C%80%E5%A4%A7%E8%BF%9E%E7%BB%AD%201%20%E7%9A%84%E4%B8%AA%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    485. 最大连续 1 的个数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/605.%20canPlaceFlowers%20%E7%A7%8D%E8%8A%B1%E9%97%AE%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    难度：简单
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E9%97%AE%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    贪心？
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E7%AE%97%E6%B3%95%E9%A2%98%EF%BC%8C%E5%88%B7%E9%A2%98%E7%9A%84%E6%96%B9%E6%B3%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    点击—小白刷题 -205 题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    双指针
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            双指针
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%8F%8C%E6%8C%87%E9%92%88/142.%20%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8%20II/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    142. 环形链表 II
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%8F%8C%E6%8C%87%E9%92%88/15.%20%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%20%E6%B2%A1%E5%86%99/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15. 三数之和 没写
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%8F%8C%E6%8C%87%E9%92%88/151.%20%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%8D%95%E8%AF%8D/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    151. 反转字符串中的单词
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%8F%8C%E6%8C%87%E9%92%88/160.%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    160.链表相交
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%8F%8C%E6%8C%87%E9%92%88/19.%20%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E8%8A%82%E7%82%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    19. 删除链表的倒数第N个节点
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%8F%8C%E6%8C%87%E9%92%88/206.%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    206.反转链表
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%8F%8C%E6%8C%87%E9%92%88/27.%20%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    27. 移除元素
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%8F%8C%E6%8C%87%E9%92%88/344.%20%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    344. 反转字符串
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%8F%8C%E6%8C%87%E9%92%88/%E5%8F%8C%E6%8C%87%E9%92%88%E6%80%BB%E7%BB%93/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    双指针总结
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%8F%8C%E6%8C%87%E9%92%88/%E6%9B%BF%E6%8D%A2%E6%95%B0%E5%AD%97/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    替换数字
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    哈希表
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            哈希表
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%93%88%E5%B8%8C%E8%A1%A8/1.%20%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. 两数之和
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%93%88%E5%B8%8C%E8%A1%A8/15.%20%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C%20%E6%B2%A1%E5%86%99/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15. 三数之和 没写
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%93%88%E5%B8%8C%E8%A1%A8/18.%20%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    18. 四数之和
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%93%88%E5%B8%8C%E8%A1%A8/202.%20%E5%BF%AB%E4%B9%90%E6%95%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    202. 快乐数
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%93%88%E5%B8%8C%E8%A1%A8/242.%20%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    242. 有效的字母异位词
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%93%88%E5%B8%8C%E8%A1%A8/349.%20%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    349. 两个数组的交集
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%93%88%E5%B8%8C%E8%A1%A8/383.%20%E8%B5%8E%E9%87%91%E4%BF%A1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    383. 赎金信
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%93%88%E5%B8%8C%E8%A1%A8/454.%20%E5%9B%9B%E6%95%B0%E7%9B%B8%E5%8A%A0%20II/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    454. 四数相加 II
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%93%88%E5%B8%8C%E8%A1%A8/%E5%93%88%E5%B8%8C%E8%A1%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    哈希表基础知识
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%93%88%E5%B8%8C%E8%A1%A8/%E6%9C%AA%E5%91%BD%E5%90%8D/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    未命名
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    字符串
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
+            <span class="md-nav__icon md-icon"></span>
+            字符串
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/1071.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%9C%80%E5%A4%A7%E5%85%AC%E5%9B%A0%E5%AD%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    难度：简单
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/151.%20%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%8D%95%E8%AF%8D%20%E7%AC%AC%E4%B8%80%E7%89%88/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    链接
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/151.%20%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%8D%95%E8%AF%8D/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    151. 反转字符串中的单词
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/1768.%20%E4%BA%A4%E6%9B%BF%E5%90%88%E5%B9%B6%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    难度：简单
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/28.%20%E6%89%BE%E5%87%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8C%B9%E9%85%8D%E9%A1%B9%E7%9A%84%E4%B8%8B%E6%A0%87%20%20--%20%E6%B2%A1%E5%86%99/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    28. 找出字符串中第一个匹配项的下标     没写
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/344.%20%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    344. 反转字符串
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/459.%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2%20--%20%E6%B2%A1%E5%86%99/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    459.重复的子字符串    没写
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/541.%20%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%20II/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    541. 反转字符串 II
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/KMR%20%E7%AE%97%E6%B3%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    知识点
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E5%8F%B3%E6%97%8B%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    右旋字符串
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    字符串知识总结
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E6%9B%BF%E6%8D%A2%E6%95%B0%E5%AD%97%20--%20%E6%B2%A1%E5%86%99/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    替换数字    没写
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_14" id="__nav_3_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数组
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_14">
+            <span class="md-nav__icon md-icon"></span>
+            数组
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E6%95%B0%E7%BB%84/26%E3%80%81%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    26、删除有序数组中的重复项
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E6%95%B0%E7%BB%84/27.%20%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    27. 移除元素
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_15" id="__nav_3_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    栈和队列
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_15">
+            <span class="md-nav__icon md-icon"></span>
+            栈和队列
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/1047.%20%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E6%89%80%E6%9C%89%E7%9B%B8%E9%82%BB%E9%87%8D%E5%A4%8D%E9%A1%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1047. 删除字符串中的所有相邻重复项
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/150.%20%E9%80%86%E6%B3%A2%E5%85%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B1%82%E5%80%BC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    150. 逆波兰表达式求值
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/20.%20%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20. 有效的括号
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/232.%20%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97--%E6%B2%A1%E5%86%99/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    232. 用栈实现队列  没写
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/java%20%E4%B8%AD%E5%88%A9%E7%94%A8%20array%20%E5%92%8C%20linkedlist%20%E3%80%81ArrayDeque%E5%AE%9E%E7%8E%B0%E6%A0%88%E7%9A%84%E5%BA%95%E5%B1%82/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    java 中利用 array 和 linkedlist 、ArrayDeque实现栈的底层
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%9A%84%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    栈和队列的区别
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_16" id="__nav_3_16_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    链表
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_16">
+            <span class="md-nav__icon md-icon"></span>
+            链表
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E9%93%BE%E8%A1%A8/142.%20%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8%20II/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    142. 环形链表 II
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E9%93%BE%E8%A1%A8/160.%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    160.链表相交
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E9%93%BE%E8%A1%A8/19.%20%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC%20N%20%E4%B8%AA%E7%BB%93%E7%82%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    知识点
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E9%93%BE%E8%A1%A8/203.%20%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    203. 移除链表元素
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E9%93%BE%E8%A1%A8/206.%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    206.反转链表
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E9%93%BE%E8%A1%A8/21.%20%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    21. 合并两个有序链表
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E9%93%BE%E8%A1%A8/237.%20%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    237. 删除链表中的节点
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E9%93%BE%E8%A1%A8/24.%20%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    24. 两两交换链表中的节点
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E9%93%BE%E8%A1%A8/707.%E8%AE%BE%E8%AE%A1%E9%93%BE%E8%A1%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    707.设计链表
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01%E5%8A%9B%E6%89%A3-%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8%E6%80%BB%E7%BB%93%E7%AF%87/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    题目
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.如何连接 Javascript 文件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.变量的使用，变量命名的规则
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.变量类型
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4let-var-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.let var const 的区别
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.基础的运算符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.基础的运算符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#math-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      // math operators 数学运算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assignment-operaters" class="md-nav__link">
+    <span class="md-ellipsis">
+      // assignment operaters 赋值运算符
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      // comparison operators 比较运算符
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6operators-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.operators precedence 运算优先级
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7challenge-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.challenge 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8strings-and-template-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.strings and template literals 字符串，模板文字
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.strings and template literals 字符串，模板文字">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#template-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      template literals 语法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      实例，传统与模板变量的区别
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9taking-decisions-ifelse" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.taking decisions if—else 判断语句
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10coding-challenge-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.coding challenge 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11type-conversion-and-corecion" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.type conversion and corecion 类型的转换和强制变化
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12truthy-and-falsy-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.truthy and falsy values 虚假值和真值的转换
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equality-operators-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      equality operators == vs === 相等运算
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-logicoperators" class="md-nav__link">
+    <span class="md-ellipsis">
+      boolean logic，operators —— &amp;&amp;，||，！
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="boolean logic，operators —— &&，||，！">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logical-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      logical operators——只用逻辑判断符号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-challenge-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      coding challenge 3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-statementswitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      switch statement——switch 语法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statements-and-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      statements and expressions 语句和表达句的区别
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-conditional-ternary-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Conditional (Ternary) Operator 条件运算符 （三元运算符）？？ 需要实践
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-challenge-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coding Challenge #4
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/Yang-Xijie/yang-xijie.github.io/edit/main/docs/Javascript 课程笔记—Udemy/01 fundmental 1.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h2 id="1-javascript">1.如何连接 Javascript 文件<a class="headerlink" href="#1-javascript" title="Permanent link">&para;</a></h2>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><span class="nx">h1</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2">
+</span><span id="__span-0-3"><span class="nx">font</span><span class="o">-</span><span class="nx">family</span><span class="o">:</span><span class="w"> </span><span class="nx">sans</span><span class="o">-</span><span class="nx">serif</span><span class="p">;</span>
+</span><span id="__span-0-4">
+</span><span id="__span-0-5"><span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span><span class="nx">px</span><span class="p">;</span>
+</span><span id="__span-0-6">
+</span><span id="__span-0-7"><span class="nx">line</span><span class="o">-</span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="mf">1.3</span><span class="p">;</span>
+</span><span id="__span-0-8">
+</span><span id="__span-0-9"><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">100</span><span class="o">%</span><span class="p">;</span>
+</span><span id="__span-0-10">
+</span><span id="__span-0-11"><span class="nx">padding</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="nx">px</span><span class="p">;</span>
+</span><span id="__span-0-12">
+</span><span id="__span-0-13"><span class="nx">text</span><span class="o">-</span><span class="nx">align</span><span class="o">:</span><span class="w"> </span><span class="nx">center</span><span class="p">;</span>
+</span><span id="__span-0-14">
+</span><span id="__span-0-15"><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="nx">white</span><span class="p">;</span>
+</span><span id="__span-0-16">
+</span><span id="__span-0-17"><span class="p">}</span>
+</span><span id="__span-0-18">
+</span><span id="__span-0-19"><span class="o">&lt;</span><span class="err">/style&gt;</span>
+</span><span id="__span-0-20">
+</span><span id="__span-0-21"><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;script.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</span><span id="__span-0-22">
+</span><span id="__span-0-23"><span class="o">&lt;</span><span class="err">/head&gt;</span>
+</span><span id="__span-0-24">
+</span><span id="__span-0-25"><span class="o">&lt;</span><span class="nx">body</span><span class="o">&gt;</span>
+</span><span id="__span-0-26">
+</span><span id="__span-0-27"><span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">JavaScript</span><span class="w"> </span><span class="nx">Fundamentals</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="nx">Part</span><span class="w"> </span><span class="mf">1</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+</span><span id="__span-0-28">
+</span><span id="__span-0-29"><span class="o">&lt;</span><span class="err">/body&gt;</span>
+</span><span id="__span-0-30">
+</span><span id="__span-0-31"><span class="o">&lt;</span><span class="err">/html&gt;</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="2">2.变量的使用，变量命名的规则<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;john&quot;</span><span class="p">);</span>
+</span><span id="__span-1-2"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;23&quot;</span><span class="p">);</span>
+</span><span id="__span-1-3"><span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;john&quot;</span><span class="p">;</span>
+</span><span id="__span-1-4"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstName</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li><strong>驼峰命名法 camleCase</strong>——第一个字母全小写，第二个往后首字母大写== “firstNamePerson”</li>
+<li><strong>其他命名法</strong>：使用斜杠 c "first_name_person"</li>
+<li><strong>3year</strong> ——不能以数字开头：“” ，是错误的。 ——threeYear</li>
+<li><strong>不能全大写</strong>——不能定义全大写的变量名，可能与保留变量重名，“PI”是圆周率；
+  <strong>全大写的是常亮</strong></li>
+<li><strong>Person</strong> ——单独的首字母大写，用于构造函数。</li>
+</ul>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><span class="kd">function</span><span class="w"> </span><span class="nx">Person</span><span class="err">（）</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>要赋予变量名，只管的意思
+  第一个的名字，能够只管的看出意思</li>
+</ul>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1">let myFirstJob = &quot;Coder&quot;;
+</span><span id="__span-3-2">let myCurrentJob = &quot;Teacher&quot;;
+</span><span id="__span-3-3">
+</span><span id="__span-3-4">let job1 = &quot;programmer&quot;;
+</span><span id="__span-3-5">let job2 = &quot;teacher&quot;;
+</span></code></pre></div></td></tr></table></div>
+<h1 id="3">3.变量类型<a class="headerlink" href="#3" title="Permanent link">&para;</a></h1>
+<p>数字
+字符串
+布尔
+未定义
+空值</p>
+<ol>
+<li><strong>Number</strong>. Floating point numbersUsed for decimals and integers
+   let age = 23;</li>
+<li>
+<p><strong>String</strong>: Sequence of characters Used for text
+   Let firstName = "Jonas"</p>
+</li>
+<li>
+<p><strong>Boolean</strong>: Logical type that can only be true or false
+   Used for taking decisions
+   let fullAge = true;</p>
+</li>
+<li>
+<p><strong>Undefined</strong>: Value taken by a variable that is not yet defined (empty value)
+   Let children;</p>
+</li>
+<li>
+<p><strong>Null</strong>: Also means 'empty value'</p>
+</li>
+<li>
+<p>**Symbol ** (ES2015):</p>
+</li>
+<li>
+<p>Value that is unique and cannot be changed Not useful for now</p>
+</li>
+<li>
+<p><strong>BigInt</strong> (ES2020): Larger integers than the Number type can hold</p>
+</li>
+</ol>
+<p>例子：</p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><span class="kd">let</span><span class="w"> </span><span class="nx">javascriptIsFun</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+</span><span id="__span-4-2">
+</span><span id="__span-4-3"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">javascriptIsFun</span><span class="p">);</span>
+</span><span id="__span-4-4">
+</span><span id="__span-4-5"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">javascriptIsFun</span><span class="p">);</span>
+</span><span id="__span-4-6">
+</span><span id="__span-4-7"><span class="c1">//重复使用已声明的变量时，不用在用“let”</span>
+</span><span id="__span-4-8"><span class="nx">javascriptIsFun</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Great&quot;</span><span class="p">;</span>
+</span><span id="__span-4-9"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">javascriptIsFun</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="4let-var-const">4.let var const 的区别<a class="headerlink" href="#4let-var-const" title="Permanent link">&para;</a></h1>
+<ul>
+<li>let 声明变量</li>
+</ul>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><span class="kd">let</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">30</span><span class="p">;</span>
+</span><span id="__span-5-2"><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">41</span><span class="p">;</span><span class="w"> </span><span class="c1">//改变了变量的数值</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><span class="c1">// let, const and var</span>
+</span><span id="__span-6-2">
+</span><span id="__span-6-3"><span class="kd">let</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">30</span><span class="p">;</span>
+</span><span id="__span-6-4"><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">31</span><span class="p">;</span>
+</span><span id="__span-6-5">
+</span><span id="__span-6-6"><span class="kd">const</span><span class="w"> </span><span class="nx">birthYear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1991</span><span class="p">;</span>
+</span><span id="__span-6-7"><span class="c1">// birthYear = 1990;</span>
+</span><span id="__span-6-8"><span class="c1">// const job;</span>
+</span><span id="__span-6-9">
+</span><span id="__span-6-10"><span class="kd">var</span><span class="w"> </span><span class="nx">job</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;programmer&quot;</span><span class="p">;</span>
+</span><span id="__span-6-11"><span class="nx">job</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;teacher&quot;</span><span class="p">;</span>
+</span><span id="__span-6-12">
+</span><span id="__span-6-13"><span class="nx">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Schmedtmann&quot;</span><span class="p">;</span>
+</span><span id="__span-6-14"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lastName</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<ul>
+<li>const 声明常量，不改变数值啦
+  //建议一律使用 const 定义变量, 如果确定会改变值的才用 let, 不使用 var--已被淘汰</li>
+</ul>
+<h1 id="5">5.基础的运算符<a class="headerlink" href="#5" title="Permanent link">&para;</a></h1>
+<h2 id="math-operators">// math operators 数学运算<a class="headerlink" href="#math-operators" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1">const now = 2037;
+</span><span id="__span-7-2">
+</span><span id="__span-7-3">const ageJonas = now - 1991;
+</span><span id="__span-7-4">
+</span><span id="__span-7-5">const ageSarah = now - 2018;
+</span><span id="__span-7-6">
+</span><span id="__span-7-7">console.log(ageJonas, ageSarah);
+</span><span id="__span-7-8">
+</span><span id="__span-7-9">console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+</span></code></pre></div></td></tr></table></div>
+<p>2 ** 3——2 的 3 次方</p>
+<h2 id="assignment-operaters">// assignment operaters 赋值运算符<a class="headerlink" href="#assignment-operaters" title="Permanent link">&para;</a></h2>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="c1">//15</span>
+</span><span id="__span-8-2">
+</span><span id="__span-8-3"><span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// x = x + 10</span>
+</span><span id="__span-8-4">
+</span><span id="__span-8-5"><span class="nx">x</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span><span class="w"> </span><span class="c1">// x = x * 4</span>
+</span><span id="__span-8-6">
+</span><span id="__span-8-7"><span class="nx">x</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="c1">//x = x + 1</span>
+</span><span id="__span-8-8">
+</span><span id="__span-8-9"><span class="nx">x</span><span class="o">--</span><span class="p">;</span>
+</span><span id="__span-8-10">
+</span><span id="__span-8-11"><span class="nx">x</span><span class="o">--</span><span class="p">;</span>
+</span><span id="__span-8-12">
+</span><span id="__span-8-13"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="comparison-operators">// comparison operators 比较运算符<a class="headerlink" href="#comparison-operators" title="Permanent link">&para;</a></h2>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ageJonas</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">ageSarah</span><span class="p">);</span><span class="w"> </span><span class="c1">// &gt;, &lt;, &gt;= , &lt;=</span>
+</span><span id="__span-9-2">
+</span><span id="__span-9-3"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ageSarah</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">);</span>
+</span><span id="__span-9-4">
+</span><span id="__span-9-5"><span class="kd">const</span><span class="w"> </span><span class="nx">isFullAge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">ageSarah</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">;</span><span class="w"> </span><span class="c1">// boolean值</span>
+</span><span id="__span-9-6">
+</span><span id="__span-9-7"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">now</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1990</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">2020</span><span class="p">);</span><span class="w"> </span><span class="c1">//先做数值运算,再做比较运算</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="6operators-precedence">6.operators precedence 运算优先级<a class="headerlink" href="#6operators-precedence" title="Permanent link">&para;</a></h1>
+<p>在 Javascript 语言中已经定义了优先级列表，严格按照这个执行</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence">MDN 查询运算优先级--网站</a></p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2037</span><span class="p">;</span>
+</span><span id="__span-10-2"><span class="kd">const</span><span class="w"> </span><span class="nx">ageJonas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1991</span><span class="p">;</span>
+</span><span id="__span-10-3"><span class="kd">const</span><span class="w"> </span><span class="nx">ageSarah</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">2018</span><span class="p">;</span>
+</span><span id="__span-10-4">
+</span><span id="__span-10-5"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">now</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1991</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">2018</span><span class="p">);</span>
+</span><span id="__span-10-6">
+</span><span id="__span-10-7"><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">;</span>
+</span><span id="__span-10-8"><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">25</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// x = y = 10, x = 10</span>
+</span><span id="__span-10-9"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">);</span>
+</span><span id="__span-10-10">
+</span><span id="__span-10-11"><span class="kd">const</span><span class="w"> </span><span class="nx">averageAge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">ageJonas</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">ageSarah</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
+</span><span id="__span-10-12"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ageJonas</span><span class="p">,</span><span class="w"> </span><span class="nx">ageSarah</span><span class="p">,</span><span class="w"> </span><span class="nx">averageAge</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<p>没仔细看，下次补上</p>
+<h1 id="7challenge-1">7.challenge 1<a class="headerlink" href="#7challenge-1" title="Permanent link">&para;</a></h1>
+<p>计算身体 BMI 指数</p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><span class="kd">const</span><span class="w"> </span><span class="nx">massJohn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">85</span><span class="p">;</span>
+</span><span id="__span-11-2"><span class="kd">const</span><span class="w"> </span><span class="nx">heightJohn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.76</span><span class="p">;</span>
+</span><span id="__span-11-3"><span class="kd">const</span><span class="w"> </span><span class="nx">massMark</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">95</span><span class="p">;</span>
+</span><span id="__span-11-4"><span class="kd">const</span><span class="w"> </span><span class="nx">heightMark</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.88</span><span class="p">;</span>
+</span><span id="__span-11-5">
+</span><span id="__span-11-6"><span class="kd">const</span><span class="w"> </span><span class="nx">BMIJohn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">massJohn</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">heightJohn</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
+</span><span id="__span-11-7"><span class="kd">const</span><span class="w"> </span><span class="nx">BMIMark</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">massMark</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">heightMark</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
+</span><span id="__span-11-8"><span class="kd">const</span><span class="w"> </span><span class="nx">isMarkhighterBMI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">BMIMark</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">BMIJohn</span><span class="p">;</span>
+</span><span id="__span-11-9">
+</span><span id="__span-11-10"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">BMIJohn</span><span class="p">,</span><span class="w"> </span><span class="nx">BMIMark</span><span class="p">,</span><span class="w"> </span><span class="nx">isMarkhighterBMI</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="8strings-and-template-literals">8.strings and template literals 字符串，模板文字<a class="headerlink" href="#8strings-and-template-literals" title="Permanent link">&para;</a></h1>
+<h2 id="template-literals">template literals 语法<a class="headerlink" href="#template-literals" title="Permanent link">&para;</a></h2>
+<p>变量或表达式用 <code>${}</code> 包裹起来，可以在字符串中直接插入变量的值或表达式的结果。
+使用``包裹整个字符串，然后用${}包括变量</p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><span class="kd">let</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Alice&quot;</span><span class="p">;</span>
+</span><span id="__span-12-2"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hello, </span><span class="si">${</span><span class="nx">firstName</span><span class="si">}</span><span class="sb">!`</span><span class="p">);</span><span class="w"> </span><span class="c1">// 输出 &quot;Hello, Alice!&quot;</span>
+</span><span id="__span-12-3">
+</span><span id="__span-12-4"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hello, </span><span class="si">${</span><span class="nx">firstName</span><span class="si">}</span><span class="sb">!`</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<p>这种语法相比传统的字符串拼接方式更加直观和方便，特别是在需要插入多个变量或表达式时。</p>
+<h2 id="_1">实例，传统与模板变量的区别<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><span class="kd">const</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Jonas&quot;</span><span class="p">;</span>
+</span><span id="__span-13-2"><span class="kd">const</span><span class="w"> </span><span class="nx">job</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;teacher&quot;</span><span class="p">;</span>
+</span><span id="__span-13-3"><span class="kd">const</span><span class="w"> </span><span class="nx">birthYear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1991</span><span class="p">;</span>
+</span><span id="__span-13-4"><span class="kd">const</span><span class="w"> </span><span class="nx">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2037</span><span class="p">;</span>
+</span><span id="__span-13-5">
+</span><span id="__span-13-6"><span class="kd">const</span><span class="w"> </span><span class="nx">jonas</span><span class="w"> </span><span class="o">=</span>
+</span><span id="__span-13-7"><span class="w">  </span><span class="s2">&quot;I&#39;m &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">firstName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;, a &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="nx">year</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">birthYear</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; year old &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">job</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;!&quot;</span><span class="p">;</span>
+</span><span id="__span-13-8">
+</span><span id="__span-13-9"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">jonas</span><span class="p">);</span>
+</span><span id="__span-13-10">
+</span><span id="__span-13-11"><span class="kd">const</span><span class="w"> </span><span class="nx">jonasNew</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`I&#39;m </span><span class="si">${</span><span class="nx">firstName</span><span class="si">}</span><span class="sb">, a </span><span class="si">${</span><span class="nx">year</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">birthYear</span><span class="si">}</span><span class="sb"> year old </span><span class="si">${</span><span class="nx">job</span><span class="si">}</span><span class="sb">!`</span><span class="p">;</span>
+</span><span id="__span-13-12"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">jonasNew</span><span class="p">);</span>
+</span><span id="__span-13-13">
+</span><span id="__span-13-14"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Just a regular string..`</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="9taking-decisions-ifelse">9.taking decisions if—else 判断语句<a class="headerlink" href="#9taking-decisions-ifelse" title="Permanent link">&para;</a></h1>
+<p>这种判断的语句和 python 很像， 我会的
+判断年龄</p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"><span class="kd">const</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">15</span><span class="p">;</span>
+</span><span id="__span-14-2"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">age</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-3"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Sarah can start driving license 🚗&quot;</span><span class="p">);</span>
+</span><span id="__span-14-4"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-5"><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">yearsLeft</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">18</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">age</span><span class="p">;</span>
+</span><span id="__span-14-6"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Sarah is too young. Wait another </span><span class="si">${</span><span class="nx">yearsLeft</span><span class="si">}</span><span class="sb"> years :)`</span><span class="p">);</span>
+</span><span id="__span-14-7"><span class="p">}</span>
+</span><span id="__span-14-8">
+</span><span id="__span-14-9"><span class="kd">const</span><span class="w"> </span><span class="nx">birthYear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2012</span><span class="p">;</span>
+</span><span id="__span-14-10"><span class="kd">let</span><span class="w"> </span><span class="nx">century</span><span class="p">;</span>
+</span><span id="__span-14-11"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">birthYear</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">2000</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-12"><span class="w">  </span><span class="nx">century</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="p">;</span>
+</span><span id="__span-14-13"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-14"><span class="w">  </span><span class="nx">century</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">21</span><span class="p">;</span>
+</span><span id="__span-14-15"><span class="p">}</span>
+</span><span id="__span-14-16">
+</span><span id="__span-14-17"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">century</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="10coding-challenge-2">10.coding challenge 2<a class="headerlink" href="#10coding-challenge-2" title="Permanent link">&para;</a></h1>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><span class="kd">const</span><span class="w"> </span><span class="nx">massMark</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">78</span><span class="p">;</span>
+</span><span id="__span-15-2"><span class="kd">const</span><span class="w"> </span><span class="nx">heightMark</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.69</span><span class="p">;</span>
+</span><span id="__span-15-3"><span class="kd">const</span><span class="w"> </span><span class="nx">massJohn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">92</span><span class="p">;</span>
+</span><span id="__span-15-4"><span class="kd">const</span><span class="w"> </span><span class="nx">heightJohn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.95</span><span class="p">;</span>
+</span><span id="__span-15-5">
+</span><span id="__span-15-6"><span class="kd">const</span><span class="w"> </span><span class="nx">BMIMark</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">massMark</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">heightMark</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
+</span><span id="__span-15-7"><span class="kd">const</span><span class="w"> </span><span class="nx">BMIJohn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">massJohn</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="nx">heightJohn</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">heightJohn</span><span class="p">);</span>
+</span><span id="__span-15-8"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">BMIMark</span><span class="p">,</span><span class="w"> </span><span class="nx">BMIJohn</span><span class="p">);</span>
+</span><span id="__span-15-9">
+</span><span id="__span-15-10"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">BMIMark</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">BMIJohn</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-11"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Mark&#39;s BMI (</span><span class="si">${</span><span class="nx">BMIMark</span><span class="si">}</span><span class="sb">) is higher than John&#39;s (</span><span class="si">${</span><span class="nx">BMIJohn</span><span class="si">}</span><span class="sb">)!`</span><span class="p">);</span>
+</span><span id="__span-15-12"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-13"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`John&#39;s BMI (</span><span class="si">${</span><span class="nx">BMIJohn</span><span class="si">}</span><span class="sb">) is higher than Marks&#39;s (</span><span class="si">${</span><span class="nx">BMIMark</span><span class="si">}</span><span class="sb">)!`</span><span class="p">);</span>
+</span><span id="__span-15-14"><span class="p">}</span><span class="w"> </span><span class="c1">//使用字符串模板，和 if-else。把结果答应出来</span>
+</span></code></pre></div></td></tr></table></div>
+<p>使用字符串模板，和 if-else。把结果答应出来</p>
+<h1 id="11type-conversion-and-corecion">11.type conversion and corecion 类型的转换和强制变化<a class="headerlink" href="#11type-conversion-and-corecion" title="Permanent link">&para;</a></h1>
+<p><strong>type conversion--类型转换</strong></p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"><span class="kd">const</span><span class="w"> </span><span class="nx">inputYear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;1991&quot;</span><span class="p">;</span>
+</span><span id="__span-16-2"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Number</span><span class="p">(</span><span class="nx">inputYear</span><span class="p">),</span><span class="w"> </span><span class="nx">inputYear</span><span class="p">);</span><span class="w"> </span><span class="c1">// 1991&#39;1991&#39; ,一个数值一个字符</span>
+</span><span id="__span-16-3"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Number</span><span class="p">(</span><span class="nx">inputYear</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">18</span><span class="p">);</span><span class="w"> </span><span class="c1">// 数值:2009</span>
+</span><span id="__span-16-4">
+</span><span id="__span-16-5"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Number</span><span class="p">(</span><span class="s2">&quot;Jonas&quot;</span><span class="p">));</span><span class="w"> </span><span class="c1">// 转换一个字符串为数字,会得到 NaN--错误</span>
+</span><span id="__span-16-6"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="kc">NaN</span><span class="p">);</span><span class="w"> </span><span class="c1">// NaN 是一个数字类型,但是无效数字</span>
+</span><span id="__span-16-7">
+</span><span id="__span-16-8"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">String</span><span class="p">(</span><span class="mf">23</span><span class="p">),</span><span class="w"> </span><span class="mf">23</span><span class="p">);</span><span class="w"> </span><span class="c1">// &#39;23&#39;23, 一个字符一个数值</span>
+</span></code></pre></div></td></tr></table></div>
+<p>展示了数字和字符结合的时候，会发生的情况</p>
+<hr />
+<p><strong>type coercion 类型强制</strong>
+当有两个不同类型发生运算时，后台会做一个默认转换</p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"><span class="c1">// type coercion</span>
+</span><span id="__span-17-2"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;I am &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">23</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; years old&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// &#39;I am 23 years old&#39;</span>
+</span><span id="__span-17-3"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;23&quot;</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="s2">&quot;10&quot;</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">3</span><span class="p">);</span><span class="w"> </span><span class="c1">// num: 10</span>
+</span><span id="__span-17-4"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;23&quot;</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="s2">&quot;2&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// num : 11.5</span>
+</span><span id="__span-17-5">
+</span><span id="__span-17-6"><span class="kd">let</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// &#39;11&#39;</span>
+</span><span id="__span-17-7"><span class="nx">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+</span><span id="__span-17-8"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span><span class="p">);</span><span class="w"> </span><span class="c1">// num: 10</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="12truthy-and-falsy-values">12.truthy and falsy values 虚假值和真值的转换<a class="headerlink" href="#12truthy-and-falsy-values" title="Permanent link">&para;</a></h1>
+<p><strong>Javascript 中只有 5 个 falsy values 虚假值:</strong>
+0, '', undefined, null, NaN
+除了这 5 个值，其他的值都会被转为真值</p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-1"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="mf">0</span><span class="p">));</span>
+</span><span id="__span-18-2"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="kc">undefined</span><span class="p">));</span>
+</span><span id="__span-18-3"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="s2">&quot;Jonas&quot;</span><span class="p">));</span>
+</span><span id="__span-18-4"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">({}));</span>
+</span><span id="__span-18-5"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">));</span>
+</span></code></pre></div></td></tr></table></div>
+<p>布尔的转换是隐性的，是强制转换，后台运行的。</p>
+<hr />
+<p><strong>- 在 if--else 中的 type corecison</strong></p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-19-1"><span class="kd">const</span><span class="w"> </span><span class="nx">money</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">100</span><span class="p">;</span><span class="w"> </span><span class="c1">// 真值</span>
+</span><span id="__span-19-2"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">money</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-3"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Don&#39;t spend it all ;)&quot;</span><span class="p">);</span>
+</span><span id="__span-19-4"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-5"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;You should get a job!&quot;</span><span class="p">);</span>
+</span><span id="__span-19-6"><span class="p">}</span>
+</span><span id="__span-19-7">
+</span><span id="__span-19-8"><span class="kd">let</span><span class="w"> </span><span class="nx">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// 假值，height = 12，let height。 试试不同的结果</span>
+</span><span id="__span-19-9"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">height</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-10"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;YAY! Height is defined&quot;</span><span class="p">);</span>
+</span><span id="__span-19-11"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-12"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Height is UNDEFINED&quot;</span><span class="p">);</span>
+</span><span id="__span-19-13"><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="equality-operators-vs">equality operators == vs === 相等运算<a class="headerlink" href="#equality-operators-vs" title="Permanent link">&para;</a></h1>
+<p><strong>=== —— 严格相等符号</strong> strict equality 严格相等 。所有的相等符号都应使用这个</p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-20-1"><span class="mf">18</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">18</span><span class="p">;</span><span class="w"> </span><span class="c1">// ture</span>
+</span><span id="__span-20-2"><span class="s2">&quot;18&quot;</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">18</span><span class="p">;</span><span class="w"> </span><span class="c1">// false</span>
+</span></code></pre></div></td></tr></table></div>
+<p>严格相等，不做任何的类型转换</p>
+<p><strong>== 两个等于 会做类型转换</strong> 松散相等 loose equality
+避免使用这个类型的相等符号，</p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-21-1"><span class="s2">&quot;18&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">18</span><span class="p">;</span><span class="w"> </span><span class="c1">// ture</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="boolean-logicoperators">boolean logic，operators —— &amp;&amp;，||，！<a class="headerlink" href="#boolean-logicoperators" title="Permanent link">&para;</a></h1>
+<ul>
+<li>
+<p><strong>A and B ， A 和 B——全为真值，才是真值。 符号表示：”&amp;&amp;“</strong>
+  [[Pasted image 20240406114446.png]]</p>
+</li>
+<li>
+<p><strong>A or B ， A 或 B——有一个真，就是真值 符号表示：“||”</strong>
+  [[Pasted image 20240406114554.png]]</p>
+</li>
+<li>
+<p>*<em>not——非值。 “!A”</em></p>
+</li>
+<li><strong>练习</strong></li>
+</ul>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-22-1"><span class="nx">A</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+</span><span id="__span-22-2"><span class="nx">B</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+</span><span id="__span-22-3"><span class="o">!</span><span class="nx">A</span><span class="p">;</span><span class="w"> </span><span class="c1">// ture</span>
+</span><span id="__span-22-4"><span class="nx">A</span><span class="w"> </span><span class="nx">or</span><span class="w"> </span><span class="nx">B</span><span class="p">;</span><span class="w"> </span><span class="c1">// ture</span>
+</span><span id="__span-22-5"><span class="nx">A</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">B</span><span class="p">;</span><span class="w"> </span><span class="c1">// false</span>
+</span><span id="__span-22-6"><span class="o">!</span><span class="nx">A</span><span class="w"> </span><span class="nx">and</span><span class="w"> </span><span class="nx">B</span><span class="p">;</span><span class="w"> </span><span class="c1">// true</span>
+</span></code></pre></div></td></tr></table></div>
+<h2 id="logical-operators">logical operators——只用逻辑判断符号<a class="headerlink" href="#logical-operators" title="Permanent link">&para;</a></h2>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-23-1"><span class="kd">const</span><span class="w"> </span><span class="nx">hasDriversLicense</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// A</span>
+</span><span id="__span-23-2"><span class="kd">const</span><span class="w"> </span><span class="nx">hasGoodVision</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// B</span>
+</span><span id="__span-23-3"><span class="kd">const</span><span class="w"> </span><span class="nx">isTired</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// C</span>
+</span><span id="__span-23-4">
+</span><span id="__span-23-5"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hasDriversLicense</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">hasGoodVision</span><span class="p">);</span>
+</span><span id="__span-23-6"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hasDriversLicense</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">hasGoodVision</span><span class="p">);</span>
+</span><span id="__span-23-7"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">!</span><span class="nx">hasDriversLicense</span><span class="p">);</span>
+</span><span id="__span-23-8"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hasDriversLicense</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">hasGoodVision</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">isTired</span><span class="p">);</span>
+</span><span id="__span-23-9">
+</span><span id="__span-23-10"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">hasDriversLicense</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">hasGoodVision</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">!</span><span class="nx">isTired</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-23-11"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Sarah is able to drive!&quot;</span><span class="p">);</span>
+</span><span id="__span-23-12"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-23-13"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Someone else should drive...&quot;</span><span class="p">);</span>
+</span><span id="__span-23-14"><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="coding-challenge-3">coding challenge 3<a class="headerlink" href="#coding-challenge-3" title="Permanent link">&para;</a></h1>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-24-1"><span class="cm">/* 题目要求</span>
+</span><span id="__span-24-2"><span class="cm">3. BONUS 1: Include a requirement for a minimum score of 100. With this rule, a team only wins if it has a higher score than the other team, and the same time a score of at least 100 points. HINT: Use a logical operator to test for minimum score, as well as multiple else-if blocks 😉</span>
+</span><span id="__span-24-3">
+</span><span id="__span-24-4"><span class="cm">4. BONUS 2: Minimum score also applies to a draw! So a draw only happens when both teams have the same score and both have a score greater or equal 100 points. Otherwise, no team wins the trophy.</span>
+</span><span id="__span-24-5">
+</span><span id="__span-24-6"><span class="cm">TEST DATA: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110</span>
+</span><span id="__span-24-7">
+</span><span id="__span-24-8"><span class="cm">TEST DATA BONUS 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123</span>
+</span><span id="__span-24-9"><span class="cm">*/</span>
+</span><span id="__span-24-10"><span class="kd">const</span><span class="w"> </span><span class="nx">scoreDolphins</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mf">97</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">112</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">80</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span>
+</span><span id="__span-24-11"><span class="kd">const</span><span class="w"> </span><span class="nx">scoreKoalas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mf">109</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">95</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">50</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span>
+</span><span id="__span-24-12">
+</span><span id="__span-24-13"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">scoreDolphins</span><span class="p">,</span><span class="w"> </span><span class="nx">scoreKoalas</span><span class="p">);</span>
+</span><span id="__span-24-14"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">scoreDolphins</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">scoreKoalas</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">scoreDolphins</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-15"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Dolphins win the trophy 🏆&quot;</span><span class="p">);</span>
+</span><span id="__span-24-16"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">scoreKoalas</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">scoreDolphins</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">scoreKoalas</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-17"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Koalas win the trophy 🏆&quot;</span><span class="p">);</span>
+</span><span id="__span-24-18"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-24-19"><span class="w">  </span><span class="nx">scoreDolphins</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">scoreKoalas</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+</span><span id="__span-24-20"><span class="w">  </span><span class="nx">scoreDolphins</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">100</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+</span><span id="__span-24-21"><span class="w">  </span><span class="nx">scoreKoalas</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">100</span>
+</span><span id="__span-24-22"><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-23"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Both win the trophy!&quot;</span><span class="p">);</span>
+</span><span id="__span-24-24"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-25"><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;No one wins the trophy 😭&quot;</span><span class="p">);</span>
+</span><span id="__span-24-26"><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="switch-statementswitch">switch statement——switch 语法<a class="headerlink" href="#switch-statementswitch" title="Permanent link">&para;</a></h1>
+<p>使用 switch 语句来选择要执行的多个代码块之一</p>
+<ul>
+<li>语法展示</li>
+</ul>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-25-1"><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-25-2"><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mf">0</span><span class="o">:</span>
+</span><span id="__span-25-3"><span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;今天是星期日&quot;</span><span class="p">;</span>
+</span><span id="__span-25-4"><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-25-5">
+</span><span id="__span-25-6"><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mf">1</span><span class="o">:</span>
+</span><span id="__span-25-7"><span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;今天是星期一&quot;</span><span class="p">;</span>
+</span><span id="__span-25-8"><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-26-1"><span class="kd">const</span><span class="w"> </span><span class="nx">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">().</span><span class="nx">getDay</span><span class="p">();</span>
+</span><span id="__span-26-2"><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="nx">d</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-26-3"><span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mf">0</span><span class="o">:</span>
+</span><span id="__span-26-4"><span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;今天是星期日&quot;</span><span class="p">;</span>
+</span><span id="__span-26-5"><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-26-6">
+</span><span id="__span-26-7"><span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mf">1</span><span class="o">:</span>
+</span><span id="__span-26-8"><span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;今天是星期一&quot;</span><span class="p">;</span>
+</span><span id="__span-26-9"><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-26-10">
+</span><span id="__span-26-11"><span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mf">2</span><span class="o">:</span>
+</span><span id="__span-26-12"><span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;今天是星期二&quot;</span><span class="p">;</span>
+</span><span id="__span-26-13"><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-26-14">
+</span><span id="__span-26-15"><span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mf">3</span><span class="o">:</span>
+</span><span id="__span-26-16"><span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;今天是星期三&quot;</span><span class="p">;</span>
+</span><span id="__span-26-17"><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-26-18">
+</span><span id="__span-26-19"><span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mf">4</span><span class="o">:</span>
+</span><span id="__span-26-20"><span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;今天是星期四&quot;</span><span class="p">;</span>
+</span><span id="__span-26-21"><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-26-22">
+</span><span id="__span-26-23"><span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mf">5</span><span class="o">:</span>
+</span><span id="__span-26-24"><span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;今天是星期五&quot;</span><span class="p">;</span>
+</span><span id="__span-26-25"><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-26-26">
+</span><span id="__span-26-27"><span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mf">6</span><span class="o">:</span>
+</span><span id="__span-26-28"><span class="w">    </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;今天是星期六&quot;</span><span class="p">;</span>
+</span><span id="__span-26-29"><span class="w">    </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-26-30"><span class="p">}</span>
+</span><span id="__span-26-31">
+</span><span id="__span-26-32"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">d</span><span class="p">);</span>
+</span><span id="__span-26-33"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="statements-and-expressions">statements and expressions 语句和表达句的区别<a class="headerlink" href="#statements-and-expressions" title="Permanent link">&para;</a></h1>
+<p>是一个高级的陈述</p>
+<p>我们编写程序是就是在写表达式句子， statement 就是简短的陈述
+表达式产生值，陈述不产生值</p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-27-1"><span class="c1">// Statements and Expressions</span>
+</span><span id="__span-27-2">
+</span><span id="__span-27-3"><span class="mf">3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span>
+</span><span id="__span-27-4"><span class="mf">1991</span><span class="p">;</span>
+</span><span id="__span-27-5"><span class="kc">true</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">!</span><span class="kc">false</span><span class="p">;</span>
+</span><span id="__span-27-6">
+</span><span id="__span-27-7"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="mf">23</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-27-8"><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;23 is bigger&quot;</span><span class="p">;</span>
+</span><span id="__span-27-9"><span class="p">}</span>
+</span><span id="__span-27-10">
+</span><span id="__span-27-11"><span class="kd">const</span><span class="w"> </span><span class="nx">me</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Jonas&quot;</span><span class="p">;</span>
+</span><span id="__span-27-12"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`I&#39;m </span><span class="si">${</span><span class="mf">2037</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1991</span><span class="si">}</span><span class="sb"> years old </span><span class="si">${</span><span class="nx">me</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="the-conditional-ternary-operator">The Conditional (Ternary) Operator 条件运算符 （三元运算符）？？ 需要实践<a class="headerlink" href="#the-conditional-ternary-operator" title="Permanent link">&para;</a></h1>
+<p>三元运算符并不是 if--else 的代替品，还有很多的作用</p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-28-1"><span class="kd">const</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">23</span><span class="p">;</span>
+</span><span id="__span-28-2"><span class="kd">const</span><span class="w"> </span><span class="nx">drink</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;wine 🍷&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;water 💧&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// 三元运算符</span>
+</span><span id="__span-28-3"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">drink</span><span class="p">);</span>
+</span><span id="__span-28-4">
+</span><span id="__span-28-5"><span class="kd">let</span><span class="w"> </span><span class="nx">drink2</span><span class="p">;</span>
+</span><span id="__span-28-6"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">age</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-28-7"><span class="w">  </span><span class="nx">drink2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;wine 🍷&quot;</span><span class="p">;</span>
+</span><span id="__span-28-8"><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-28-9"><span class="w">  </span><span class="nx">drink2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;water 💧&quot;</span><span class="p">;</span>
+</span><span id="__span-28-10"><span class="p">}</span>
+</span><span id="__span-28-11"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">drink2</span><span class="p">);</span>
+</span><span id="__span-28-12"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`I like to drink </span><span class="si">${</span><span class="nx">age</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;wine 🍷&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;water 💧&quot;</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// 加入三元运算符和字符模版</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-29-1"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`I like to drink </span><span class="si">${</span><span class="nx">age</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;wine 🍷&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;water 💧&quot;</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// 加入三元运算符和字符模版</span>
+</span></code></pre></div></td></tr></table></div>
+<h1 id="coding-challenge-4">Coding Challenge #4<a class="headerlink" href="#coding-challenge-4" title="Permanent link">&para;</a></h1>
+<p>Steven wants to build a very simple tip calculator for whenever he goes eating in a resturant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.</p>
+<ol>
+<li>Your task is to caluclate the tip, depending on the bill value. Create a variable called 'tip' for this. It's not allowed to use an if/else statement 😅 (If it's easier for you, you can start with an if/else statement, and then try to convert it to a ternary operator!)</li>
+<li>Print a string to the console containing the bill value, the tip, and the final value (bill + tip). Example: 'The bill was 275, the tip was 41.25, and the total value 316.25'</li>
+</ol>
+<p>TEST DATA: Test for bill values 275, 40 and 430
+HINT: To calculate 20% of a value, simply multiply it by 20/100 = 0.2
+HINT: Value X is between 50 and 300, if it's &gt;= 50 &amp;&amp; &lt;= 300 😉</p>
+<div class="language-js highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">JavaScript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-30-1">
+</span></code></pre></div></td></tr></table></div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      杨希杰 CC-BY-4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/Yang-Xijie" target="_blank" rel="noopener" title="GitHub | Yang-Xijie" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://space.bilibili.com/24502827" target="_blank" rel="noopener" title="Bilibili | 杨希杰619" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0s16.1 2.868 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0c8.8 0 16.1 2.868 21.9 8.603 5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1zm-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8 6.3-6.5 9.7-14.3 10.1-23.5V173.8zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5-9.6 0-17.5-3.2-23.6-9.5-6.1-6.3-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2 6.3-6.3 13.2-9.6 23.3-10 9.2.4 17 3.7 23.3 10zm191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.1 6.3-14 9.5-23.6 9.5-9.6 0-17.4-3.2-23.6-9.5-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2 6.3-6.3 14.1-9.6 23.3-10 9.2.4 17 3.7 23.3 10z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://yang-xijie.github.io/ME/qq-groups/" target="_blank" rel="noopener" title="小杰答疑群 QQ 796233390" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M433.754 420.445c-11.526 1.393-44.86-52.741-44.86-52.741 0 31.345-16.136 72.247-51.051 101.786 16.842 5.192 54.843 19.167 45.803 34.421-7.316 12.343-125.51 7.881-159.632 4.037-34.122 3.844-152.316 8.306-159.632-4.037-9.045-15.25 28.918-29.214 45.783-34.415-34.92-29.539-51.059-70.445-51.059-101.792 0 0-33.334 54.134-44.859 52.741-5.37-.65-12.424-29.644 9.347-99.704 10.261-33.024 21.995-60.478 40.144-105.779C60.683 98.063 108.982.006 224 0c113.737.006 163.156 96.133 160.264 214.963 18.118 45.223 29.912 72.85 40.144 105.778 21.768 70.06 14.716 99.053 9.346 99.704z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://yang-xijie.github.io/ME/qq-groups/" target="_blank" rel="noopener" title="小杰水群 QQ 824114857" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M433.754 420.445c-11.526 1.393-44.86-52.741-44.86-52.741 0 31.345-16.136 72.247-51.051 101.786 16.842 5.192 54.843 19.167 45.803 34.421-7.316 12.343-125.51 7.881-159.632 4.037-34.122 3.844-152.316 8.306-159.632-4.037-9.045-15.25 28.918-29.214 45.783-34.415-34.92-29.539-51.059-70.445-51.059-101.792 0 0-33.334 54.134-44.859 52.741-5.37-.65-12.424-29.644 9.347-99.704 10.261-33.024 21.995-60.478 40.144-105.779C60.683 98.063 108.982.006 224 0c113.737.006 163.156 96.133 160.264 214.963 18.118 45.223 29.912 72.85 40.144 105.778 21.768 70.06 14.716 99.053 9.346 99.704z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.xiaohongshu.com/user/profile/61be0cc10000000021024369" target="_blank" rel="noopener" title="小红书 | 杨希杰" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M160 32c-35.3 0-64 28.7-64 64v224c0 35.3 28.7 64 64 64h352c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H160zm236 106.7 96 144c4.9 7.4 5.4 16.8 1.2 24.6S480.9 320 472 320H200c-9.2 0-17.6-5.3-21.6-13.6s-2.9-18.2 2.9-25.4l64-80c4.6-5.7 11.4-9 18.7-9s14.2 3.3 18.7 9l17.3 21.6 56-84c4.5-6.6 12-10.6 20-10.6s15.5 4 20 10.7zM192 128a32 32 0 1 1 64 0 32 32 0 1 1-64 0zm-144-8c0-13.3-10.7-24-24-24S0 106.7 0 120v224c0 75.1 60.9 136 136 136h320c13.3 0 24-10.7 24-24s-10.7-24-24-24H136c-48.6 0-88-39.4-88-88V120z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://yang-xijie.github.io/ME/support/" target="_blank" rel="noopener" title="打赏支持" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M96 64c0-17.7 14.3-32 32-32h384c70.7 0 128 57.3 128 128s-57.3 128-128 128h-32c0 53-43 96-96 96H192c-53 0-96-43-96-96V64zm384 160h32c35.3 0 64-28.7 64-64s-28.7-64-64-64h-32v128zM32 416h512c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.path", "toc.follow", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      
+        <script src="../../mkdocs/javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
